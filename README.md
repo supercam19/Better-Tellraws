@@ -4,6 +4,7 @@
 I would add more features, but I'm not sure what else I can add.
 
 # Installing
+For this you will need [python](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/)
 - Download the zip attached to the latest release.
 - Extract the .zip file
 - Open a command line and type:
