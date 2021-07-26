@@ -1,0 +1,1 @@
+tellraw @a [{"text":"Hello World! ","color":"gold","bold":"true","nbt":"example","storage":"temp"},{"text":"Second Text Block!","color":"red","underlined":"true"}]
