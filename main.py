@@ -21,7 +21,7 @@ if settings == 'n':
     else:
         copyText = True
 elif settings == 'y':
-    print(' >>  | Proceeding with default settings')
+    print(' >> | Proceeding with default settings')
 else:
     print(' !! | Invalid response, proceeding with default settings')
 
