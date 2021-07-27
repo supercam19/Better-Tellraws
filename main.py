@@ -4,6 +4,7 @@ done = False
 inputFile = 'input.json'
 outputFile = 'output.txt'
 copyText = True
+removeIndents = True
 
 
 settings = input(' ?? | Compile with default settings?(y/n): ')
@@ -20,6 +21,11 @@ if settings == 'n':
         copyText = False
     else:
         copyText = True
+    removeIndents = input(' ?? | Remove indents, can mess up tellraws with multiple spaces? (default is true)(y/n): ')
+    if removeIndents == 'n':
+        removeIndents = False
+    else:
+        removeIndents = True
 elif settings == 'y':
     print(' >> | Proceeding with default settings')
 else:
@@ -30,6 +36,9 @@ print(' >> | Reading input file ' + inputFile)
 data = open(inputFile, 'r')
 tellraw = data.read()
 tellraw = re.sub(r"[\n]*", "", tellraw)
+if removeIndents:
+    tellraw = re.sub(' +', ' ', tellraw)
+    tellraw = re.sub('{ ', '{', tellraw)
 data = open(outputFile, 'w')
 data.write(tellraw)
 print(' >> | Writing to output file ' + outputFile)
