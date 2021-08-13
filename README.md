@@ -1,7 +1,7 @@
 # Better-Tellraws
  An easier way to write tellraws. By supercam19
 
-I would add more features, but I'm not sure what else I can add.
+NOTICE: This project has been finished and will no longer receive more updates.
 
 # Installing
 For this you will need [python](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/)
